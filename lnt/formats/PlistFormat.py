@@ -8,10 +8,17 @@ def _matches_format(path_or_file):
     except Exception:
         return False
 
+def readPlist(file_name):
+  # TODO plistlib.readPlist,
+  pass
+
+def writePlist(root_dist, file_path):
+  # TODO plistlib.writePlist,
+  pass
 
 format = {
     'name': 'plist',
     'predicate': _matches_format,
-    'read': plistlib.readPlist,
-    'write': plistlib.writePlist,
+    'read': readPlist,
+    'write': writePlist,
 }
